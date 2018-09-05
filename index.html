@@ -3,8 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <title>PyLadies Tokyo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+          .bs-component + .bs-component {
+            margin-top: 1rem;
+          }
+          @media (min-width: 768px) {
+            .bs-docs-section {
+              margin-top: 8em;
+            }
+            .bs-component {
+              position: relative;
+            }
+            .bs-component .modal {
+              position: relative;
+              top: auto;
+              right: auto;
+              bottom: auto;
+              left: auto;
+              z-index: 1;
+              display: block;
+            }
+            .bs-component .modal-dialog {
+              width: 90%;
+            }
+            .bs-component .popover {
+              position: relative;
+              display: inline-block;
+              width: 220px;
+              margin: 20px;
+            }
+            .nav-tabs {
+              margin-bottom: 15px;
+            }
+            .progress {
+              margin-bottom: 10px;
+            }
+          }
+    </style>
 </head>
 <body>
-<p>Welcome! Pyladies Tokyo!</p>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/image/pyladies-tokyo.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
+        PyLadies Tokyo
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Top <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/coc/index.html">Code of Conduct</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container">
+    <h1 id="dialogs">Welcome! PyLadies Tokyo!</h1>
+    <div class="col-12">
+        <div class="bs-component">
+            <div class="card mb-3">
+                <h3 class="card-header">PyLadies Tokyo とは</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                            PyLadiesは，Pythonが好きな女性を結ぶ国際的なコミュニティです.Pythonが好きであれば初心者／熟練者問わずどなたでも参加できます．
+                            より詳しい情報については<a href="http://www.pyladies.com/" class="card-link" target="_blank">PyLadies 公式ページ</a>をご覧下さい．
+                            <br/>
+                            PyLadies Tokyoは,PyLadiesの東京支部として女性Pythonistaを繋ぐために活動しています．
+                            基本的には月一のMeetupを主な活動としていますが,<a href="https://www.pycon.jp/" class="card-link" target="_blank">PyCon JP</a>のカンファレンスに参加したり,
+                            <a href="https://djangogirls.org/tokyo/" class="card-link" target="_blank">Django Girls Tokyo</a>と協力してWorkshopを開催するなど,その他にも様々な活動を行っています．
+                            PyLadies Tokyoの各種イベントについては,<a href="http://pyladies-tokyo.connpass.com/" class="card-link" target="_blank">connpassページ</a>をご参照下さい．
+                            <br/>
+                            PyLadies Tokyoについて意見・質問などありましたら，tokyo@pyladies.com までお気軽にお問い合わせ下さい．
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="bs-component">
+            <div class="card mb-3">
+                <h3 class="card-header">参加者募集中！</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                            本コミュニティではPythonが好きな女性の参加を心待ちにしています^^！
+                            <br/>
+                            初心者／熟練者問いません．Pythonでコードを書いたことがない・・・という方でも，
+                            Pythonに興味があればお気軽にご参加下さい（Pythonを用いた初心者向けイベントも行っています）
+                            <br/>
+                            PyLadies Tokyoでは，チャットツールの<a href="https://slack.com/" class="card-link" target="_blank">Slack</a>を使ってメンバー同士コミュニケーションをとっています．
+                            PyLadies Tokyoの活動に興味のある方は，この機会にぜひSlackチームに参加してみませんか？
+                            <br/>
+                            <a href="http://bit.ly/1fqJkNu" class="card-link" target="_blank">Slackアカウント申請 – PyLadies Japan</a>
+                            <br/>
+                            <ul>
+                                <li>男性の方の申請はご遠慮ください</li>
+                                <li>無料で利用できます</li>
+                                <li><a href="http://pyladies-kyoto.connpass.com/" class="card-link" target="_blank">PyLadies Kyoto</a>の活動に興味がある方もこちらからご参加いただけます</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="button" class="btn btn-outline-primary">
+            <a href="http://pyladies-tokyo.connpass.com/" target="_blank">
+                <img src="image/connpass.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">connpass
+            </a>
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+            <a href="https://www.facebook.com/PyLadiesTokyo" target="_blank">
+                <img src="image/facebook.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">Facebook
+            </a>
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+            <a href="hhttps://twitter.com/PyLadiesTokyo" target="_blank">
+                <img src="image/twitter.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">Twitter
+            </a>
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+            <a href="https://plus.google.com/u/0/communities/104671206479966966350" target="_blank">
+                <img src="image/g-plus.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">Google+
+            </a>
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+            <a href="https://github.com/PyLadiesTokyo" target="_blank">
+                <img src="image/github.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">GitHub
+            </a>
+        </button>
+    </div>
+    <div class="col-12">
+        <a class="twitter-timeline"  href="https://twitter.com/hashtag/PyLadiesTokyo" data-widget-id="644514201038262272">#PyLadiesTokyo のツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <a class="twitter-timeline"  href="https://twitter.com/PyLadiesTokyo" data-widget-id="644512196920111104">@PyLadiesTokyoさんのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+
 </body>
 </html>
