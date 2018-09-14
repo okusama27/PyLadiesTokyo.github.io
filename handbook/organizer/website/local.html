@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating your own Local Website &mdash; PyLadies Organizer Handbook</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'2.1.0',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+        <link rel="author" title="このドキュメントについて"
+              href="../../about.html"/>
+        <link rel="index" title="索引"
+              href="../../genindex.html"/>
+        <link rel="search" title="検索" href="../../search.html"/>
+    <link rel="top" title="PyLadies Organizer Handbook" href="../../index.html"/>
+        <link rel="up" title="Current Organizers" href="../index.html"/>
+        <link rel="next" title="Handover" href="../admin/handover.html"/>
+        <link rel="prev" title="Developing on the Global PyLadies Website" href="global.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> PyLadies Handbook</a>
+        <form class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">概要</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../overview.html#about">PyLadiesについて</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../overview.html#how-to-use-this-kit">このキットの使い方</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../prospective/index.html">Prospective Organizers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../prospective/index.html#things-to-think-about">Things to Think About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../prospective/index.html#process-overview">Process Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../prospective/index.html#process-checklist">Process Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../prospective/index.html#faqs">FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../prospective/index.html#questions-contact">Questions &amp; Contact</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Current Organizers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#handy-links">Handy Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#event-hosting">Event Hosting</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#admin-stuff">Admin Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#global-organization">Global Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#miscellaneous-helpful-stuff">Miscellaneous Helpful Stuff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#difficult-stuff">Difficult Stuff</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../member/index.html">メンバー参照</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../member/index.html#about-pyladies">PyLadies について</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../member/index.html#joining-pyladies">PyLadiesへの参加</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../member/index.html#difficult-stuff">私たちを取り巻く難しい問題</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../global/index.html">Global PyLadies Organization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../global/index.html#contact">Contact</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/index.html">Miscellaneous</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/logo.html">PyLadies Logo Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/trademark.html">PyLadies Trademark Usage Policy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What's new?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../changelog.html#v2-0-5">v2.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../changelog.html#v2-0-4">v2.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../changelog.html#v2-0-pypi-release">v2.0 PyPI Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../changelog.html#v1-0-initial-release">v1.0 Initial Release</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">PyLadies Handbook</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Docs</a> &raquo;</li>
+  <li><a href="">Creating your own Local Website</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="creating-your-own-local-website">
+<h1><a class="toc-backref" href="#id8">Creating your own Local Website</a><a class="headerlink" href="#creating-your-own-local-website" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Ready to setup your location's website? Great!</p>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目次</p>
+<ul class="simple">
+<li><a class="reference internal" href="#creating-your-own-local-website" id="id8">Creating your own Local Website</a><ul>
+<li><a class="reference internal" href="#domain-setup" id="id9">Domain Setup</a></li>
+<li><a class="reference internal" href="#developing-the-website" id="id10">Developing the Website</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="domain-setup">
+<h2><a class="toc-backref" href="#id9">Domain Setup</a><a class="headerlink" href="#domain-setup" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><em>Domain admins:</em> currently <a class="reference external" href="mailto:esthernam&#37;&#52;&#48;gmail&#46;com">Esther Nam</a> and <a class="reference external" href="mailto:lynn&#37;&#52;&#48;pyladies&#46;com">Lynn Root</a></p>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">Please <strong>DO NOT</strong> purchase your own separate domain!</p>
+</div>
+<p>We will easily setup a subdomain on the <code class="docutils literal notranslate"><span class="pre">pyladies.com</span></code> site for you (e.g. <code class="docutils literal notranslate"><span class="pre">nyc.pyladies.com</span></code>).  It's also possible if you'd prefer to use the <code class="docutils literal notranslate"><span class="pre">pyladies.org</span></code> namespace (e.g. <code class="docutils literal notranslate"><span class="pre">nyc.pyladies.org</span></code>).  We can also do <code class="docutils literal notranslate"><span class="pre">pyladies.com/nyc</span></code> or <code class="docutils literal notranslate"><span class="pre">pyladies.org/nyc</span></code> too.  Your choice!</p>
+<p>If you are in a location that frequently uses other TLDs, e.g. <code class="docutils literal notranslate"><span class="pre">.co.uk</span></code>, please contact our domain administrators listed above.</p>
+</div>
+<div class="section" id="developing-the-website">
+<h2><a class="toc-backref" href="#id10">Developing the Website</a><a class="headerlink" href="#developing-the-website" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>You have two options: a <a class="reference internal" href="#static"><span class="std std-ref">Static Website</span></a> website, or a <a class="reference internal" href="#dynamic"><span class="std std-ref">Dynamic Website</span></a> website.  Whichever you prefer!  And you can switch over any time.  It may be easier/quicker for you to start with a static website - then create a dynamic website when you have more time.</p>
+<div class="section" id="static-website">
+<span id="static"></span><h3>Static Website<a class="headerlink" href="#static-website" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>A static website is just HTML, CSS, and client-side JavaScript (exactly like the current <code class="docutils literal notranslate"><span class="pre">www.pyladies.com</span></code> site is set up).  It's great if you don't want a database or server-side logic; it's really easy to maintain.</p>
+<div class="section" id="current-examples">
+<h4>Current Examples<a class="headerlink" href="#current-examples" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>There are plenty of PyLadies locations that have simple static websites.  Here are a couple:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://remote.pyladies.com">remote.pyladies.com</a>: <a class="reference external" href="https://github.com/pyladies/pyladies/tree/master/remote">remote codebase</a></li>
+<li><a class="reference external" href="http://boston.pyladies.com">boston.pyladies.com</a>: <a class="reference external" href="https://github.com/pyladies/pyladies/tree/master/boston">boston codebase</a></li>
+<li><a class="reference external" href="http://nyc.pyladies.com">nyc.pyladies.com</a>: <a class="reference external" href="https://github.com/pyladies/pyladies/tree/master/nyc">nyc codebase</a></li>
+</ul>
+</div>
+<div class="section" id="process">
+<h4>Process<a class="headerlink" href="#process" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>If you're interested in the various static website tools out there, check out <a class="reference internal" href="#tools"><span class="std std-ref">Tools</span></a>.</p>
+<p>To setup your static website:</p>
+<ol class="arabic simple">
+<li>Fork the <a class="reference external" href="https://github.com/pyladies/pyladies">pyladies/pyladies</a> repository to your own (or your local PyLadies) GitHub account.</li>
+<li>Locally clone <strong>your</strong> fork of the repository.</li>
+<li>Create a directory within the main <code class="docutils literal notranslate"><span class="pre">pyladies</span></code> folder of the repository (on the same directory level as <code class="docutils literal notranslate"><span class="pre">www</span></code> and the other subdomains.)</li>
+<li>Develop the website within your new directory.</li>
+<li>Be sure to add a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file that explains how to create the HTML files if you are using a static site generator (like <a class="reference external" href="https://github.com/pyladies/pyladies#to-run-locally">here</a>).</li>
+<li>Commit the code locally, and push it up to <strong>your</strong> fork.</li>
+<li>Make a pull request against the <code class="docutils literal notranslate"><span class="pre">pyladies/pyladies</span></code> repository.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">When making a pull request, please squash all your commits into one commit!  We like a clean history!  Here's a good how-to on <a class="reference external" href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html">git rebase</a> to squash commits.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">In your pull request - please include the desired subdomain namespace - e.g. <code class="docutils literal notranslate"><span class="pre">nyc.pyladies.com</span></code></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">Be sure that the subdomain information in <a class="reference external" href="https://github.com/pyladies/pyladies/blob/master/www/config.yml">www/config.yml</a> within the <a class="reference external" href="https://github.com/pyladies/pyladies">pyladies/pyladies</a> repository matches the subdomain of your website!  Lots of linking-magic goes on.</p>
+</div>
+</div>
+<div class="section" id="tools">
+<span id="id2"></span><h4>Tools<a class="headerlink" href="#tools" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>You can hand-write all your HTML files, but that's a bit of a pain.  Here are a list of tools that can help create your static website for you:</p>
+<div class="section" id="mynt">
+<h5>Mynt<a class="headerlink" href="#mynt" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p><a class="reference external" href="http://mynt.uhnomoli.com/">mynt</a> is a static site generator written in Python.  This is the tool that the main PyLadies site - <a class="reference external" href="http://www.pyladies.com">www.pyladies.com</a> uses.</p>
+<p>You write the content of your site in <a class="reference external" href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> format, design the layout and organization of the site (e.g. how the content will be presented) using <a class="reference external" href="http://jinja.pocoo.org/docs/dev/">Jinja2</a> templates (another Python library), and edit/create your own themes with CSS.  Running <code class="docutils literal notranslate"><span class="pre">mynt</span> <span class="pre">gen</span></code> over your Markdown &amp; CSS files and Jinja2 templates will create static HTML files that you can then view via the <code class="docutils literal notranslate"><span class="pre">mynt</span> <span class="pre">serve</span></code> command.</p>
+</div>
+<div class="section" id="pelican">
+<h5>Pelican<a class="headerlink" href="#pelican" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Extremely similar to <a class="reference external" href="http://mynt.uhnomoli.com/">mynt</a>, <a class="reference external" href="http://pelican.readthedocs.org/en/latest/">pelican</a> is another static site generator written in Python.  It's the same process - write in <a class="reference external" href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>, organize via <a class="reference external" href="http://jinja.pocoo.org/docs/dev/">Jinja2</a> tempaltes, and edit your theme with CSS.</p>
+<p>Pelican does offer a bigger user base than <a class="reference external" href="http://mynt.uhnomoli.com/">mynt</a>, and therefore has many plugins and themes already setup to use.</p>
+</div>
+<div class="section" id="other-python-static-site-generators">
+<h5>Other Python Static Site Generators<a class="headerlink" href="#other-python-static-site-generators" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Some others if you're curious:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://getnikola.com/">nikola</a></li>
+<li><a class="reference external" href="http://hyde.github.io/">hyde</a></li>
+<li><a class="reference external" href="http://packages.python.org/Frozen-Flask/">Frozen Flask</a></li>
+<li><a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> (generally used for project documentation but can easily be used for this)</li>
+<li><a class="reference external" href="https://www.staticgen.com/mkdocs">mkdocs</a> (similar to Sphinx - generally used for project docs but easily used for this)</li>
+</ul>
+</div>
+<div class="section" id="other-non-python-static-site-generators">
+<h5>Other Non-Python Static Site Generators<a class="headerlink" href="#other-non-python-static-site-generators" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>It's totally okay to use a non-Python package(s) to help make your website.  Here's a list of common &amp; widely-used ones:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.staticgen.com/jekyll">Jekyll</a> (Ruby)</li>
+<li><a class="reference external" href="https://www.staticgen.com/octopress">Octopress</a> (Ruby)</li>
+<li><a class="reference external" href="https://www.staticgen.com/gitbook">GitBook</a> (JavaScript)</li>
+<li>A <a class="reference external" href="https://www.staticgen.com/">nice list of static site generators</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="dynamic-website">
+<span id="dynamic"></span><h3>Dynamic Website<a class="headerlink" href="#dynamic-website" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>A dynamic website goes beyond simple HTML/CSS/JavaScript.  A website written with <a class="reference external" href="https://devcenter.heroku.com/categories/language-support">Django</a> or <a class="reference external" href="https://devcenter.heroku.com/categories/language-support">Flask</a> is a dynamic website (and it's okay if you want to use a non-Python web framework, so long as it's supported by <a class="reference external" href="https://devcenter.heroku.com/categories/language-support">Heroku</a>).</p>
+<div class="section" id="id3">
+<h4>Current Examples<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>There are a few PyLadies locations that have built their own dynamic websites.  Here are a couple:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://australia.pyladies.com/">australia.pyladies.com</a></li>
+<li><a class="reference external" href="http://tw.pyladies.com">tw.pyladies.com</a></li>
+<li><a class="reference external" href="http://brasil.pyladies.com/">brasil.pyladies.com</a></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h4>Process<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>If you're interested in the various dynamic website frameworks out there, check out <a class="reference internal" href="#frameworks"><span class="std std-ref">Frameworks</span></a>.</p>
+<p>To setup your dynamic website:</p>
+<ol class="arabic simple">
+<li>Create your own git repository (ideally under your local PyLadies GitHub account, registered under your <code class="docutils literal notranslate"><span class="pre">pyladies.com</span></code> email address).</li>
+<li>Create your website.</li>
+<li>Create a free <a class="reference external" href="https://signup.heroku.com/www-header">Heroku account</a> with your PyLadies email address, if you haven't already.  Be sure to download the <a class="reference external" href="https://toolbelt.heroku.com/">Heroku toolbelt</a> for easy application setup and deployment.</li>
+<li>When you're ready to deploy, ping the domain admins (above).  They will set up your PyLadies email address to an admin-managed Heroku app (which will give your PyLadies complete access for deployment) as well as setup all the DNS records needed.</li>
+<li>Log into your Heroku account and follow the instructions for deploying (available under newly-created application that the admins made).</li>
+</ol>
+</div>
+<div class="section" id="frameworks">
+<span id="id5"></span><h4>Frameworks<a class="headerlink" href="#frameworks" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../admin/handover.html" class="btn btn-neutral float-right" title="Handover"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="global.html" class="btn btn-neutral" title="Developing on the Global PyLadies Website"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2014-2016, PyLadies.
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>
